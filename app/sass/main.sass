@@ -1,0 +1,57 @@
+@import "vars"
+*
+  padding: 0
+  margin: 0
+
+body
+  font-size: 16px
+  line-height: 1
+  color: $main-color
+
+.btn
+  display: inline-block
+  padding: 12px 25px
+  border-radius: 2px
+.btn-blue
+  color: #fff
+  background-color: #00b4ff
+img
+  max-width: 100%
+
+.top-nav
+  background-color: #fff
+  .phones-wrap
+    text-align: right
+    padding-top: 15px
+    .phone
+      display: inline-block
+      font-weight: bold
+      margin-right: 25px
+      .fa
+        margin-right: 10px
+        font-size: 22px
+  .logo-wrap
+    >div
+      display: inline-block
+    .logo
+      width: 43px
+    .slogan
+      text-transform: uppercase
+      font-weight: bold
+      margin-left: 10px
+  .menu
+    ul
+      display: table
+      list-style-type: none
+      width: 100%
+      padding: 20px 0
+      li
+        display: table-cell
+        a
+          text-decoration: none
+          color: $main-color
+          &:hover
+            border-bottom: 1px dashed $main-color
+            text-decoration: none
+.top-poster
+  background-color: #ced3d7
