@@ -14,4 +14,8 @@ $(document).ready(function () {
     $('.fa-nav').filter('.prev').click(function () {
         owl.prev();
     });
+    // var ch = $('.works-slider').find('.item').children();
+    // console.log(ch);
+    // // ch.equalHeights();
+    // $('.item-1').equalHeights();
 });

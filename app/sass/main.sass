@@ -344,3 +344,118 @@ img
     &.active
       span
         background-color: $main-color
+/* OUR WORK */
+.our-work
+  padding-top: 50px
+  .section-title
+    margin-bottom: 50px
+  .works-types
+    ul
+      list-style-type: none
+      display: table
+      width: 100%
+      margin-bottom: 7px
+      li
+        text-align: center
+        display: table-cell
+        &.active
+          a
+            color: #50545a
+            font-weight: bold
+        a
+          font-size: 13px
+          color: #a3a3a3
+          text-transform: uppercase
+          &:hover, &:active
+            color: #50545a
+            font-weight: bold
+  .works-slider
+    position: relative
+    border-top: 1px solid #d3d3d3
+    .background
+      position: absolute
+      top: 0
+      bottom: 0
+      right: 0
+      left: 0
+      z-index: -1
+      .left
+        width: 50%
+        height: 100%
+        background-color: #f7f7f7
+      .right
+        height: 100%
+        width: 50%
+        background-color: #fff
+  .items
+    h3.item-title
+      color: $accent-color
+      text-transform: uppercase
+      font-weight: bold
+      margin-bottom: 25px
+    .list
+      list-style-type: none
+      .list-item
+        margin-bottom: 30px
+        padding-left: 30px
+        position: relative
+        line-height: 1.5
+        &:after
+          font: 14px/1 FontAwesome
+          position: absolute
+          left: 0
+          top: 0
+          font-size: 18px
+          text-rendering: auto
+          smoothing: antialiased
+    .problem
+      float: left
+      width: 50%
+      padding: 45px 90px 65px 0
+      .list-item:after
+        content: '\f05c'
+        color: #fd8f8f
+      .photo-wrap
+        width: 100%
+        margin-top: 120px
+        .photo
+          width: 50%
+          text-align: center
+          p
+            text-transform: uppercase
+            font-weight: bold
+            font-size: 11px
+            color: #a6a6a6
+            margin-top: 10px
+          &.before
+            float: left
+          &.after
+            float: right
+    .treatment
+      float: right
+      width: 50%
+      padding: 45px 0 65px 90px
+      position: relative
+      .comment
+        font-style: italic
+        line-height: 1.3
+      .list-item:after
+        content: '\f05d'
+        color: $accent-color
+      .r-line
+        position: absolute
+        left: 0
+        background-color: #f7f7f7
+        width: 90px
+        top: 0
+        height: 100%
+        .top
+          width: 100%
+          height: 50%
+          background-color: #fff
+          border-radius: 0 0 0 45px
+        .bottom
+          width: 100%
+          height: 50%
+          background-color: #fff
+          border-radius: 45px 0 0 0
