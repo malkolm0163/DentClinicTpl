@@ -1,4 +1,10 @@
 $(document).ready(function () {
+    if(!Modernizr.svg) {
+        $("img[src*='svg']").attr("src", function() {
+            return $(this).attr("src").replace(".svg", ".png");
+        });
+    }
+
     var owl1 = $(".survey-slider");
     owl1.owlCarousel({
         items : 3,
@@ -50,23 +56,23 @@ $(document).ready(function () {
         var newActive = '.' + m[0];
         owl2Items.filter(newActive).addClass('active');
         switch (m[0]){
-            case 'expensive':{
+            case 'expensive':  {
                 owl2.goTo(0, 200);
                 break;
             }
-            case 'complicated':{
+            case 'complicated':  {
                 owl2.goTo(1, 200);
                 break;
             }
-            case 'interesting':{
+            case 'interesting':  {
                 owl2.goTo(2, 200);
                 break;
             }
-            case 'unusual':{
+            case 'unusual':  {
                 owl2.goTo(3, 200);
                 break;
             }
-            default:{
+            default:  {
                 console.error('Not Found');
             }
         }
@@ -86,5 +92,9 @@ $(document).ready(function () {
     btnMenu.click(function () {
         var a = $(this).children('.btn-menu');
         a.fadeToggle();
+    });
+    $('.license').find('.plus').magnificPopup({
+        type:'image',
+        closeBtnInside: true
     });
 });
