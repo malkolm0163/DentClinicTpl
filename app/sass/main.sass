@@ -344,7 +344,13 @@ img
     &.active
       span
         background-color: $main-color
+
+
+
 /* OUR WORK */
+
+
+
 .our-work
   padding-top: 50px
   .section-title
@@ -388,6 +394,9 @@ img
         width: 50%
         background-color: #fff
   .items
+    position: relative
+    .item
+      display: table
     h3.item-title
       color: $accent-color
       text-transform: uppercase
@@ -409,15 +418,19 @@ img
           text-rendering: auto
           smoothing: antialiased
     .problem
-      float: left
       width: 50%
+      position: relative
+      background-color: #f7f7f7
+      display: table-cell
       padding: 45px 90px 65px 0
       .list-item:after
         content: '\f05c'
         color: #fd8f8f
       .photo-wrap
         width: 100%
-        margin-top: 120px
+        position: absolute
+        bottom: 70px
+        padding-right: 90px
         .photo
           width: 50%
           text-align: center
@@ -432,9 +445,11 @@ img
           &.after
             float: right
     .treatment
-      float: right
+      //float: right
       width: 50%
+      display: table-cell
       padding: 45px 0 65px 90px
+      background-color: #fff
       position: relative
       .comment
         font-style: italic
@@ -459,3 +474,21 @@ img
           height: 50%
           background-color: #fff
           border-radius: 45px 0 0 0
+    &.owl-theme
+      .owl-controls
+        position: absolute
+        top: 50%
+        width: 100%
+        margin-top: -45px
+        .owl-buttons
+          position: relative
+          >div
+            position: absolute
+            background: none
+          .owl-prev
+            left: -85px
+          .owl-next
+            right: -85px
+        .fa
+          font-size: 70px
+          color: #7d7e7e
