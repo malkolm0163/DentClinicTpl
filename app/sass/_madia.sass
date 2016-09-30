@@ -1,0 +1,190 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+  .top-poster .main-text-wrap
+    padding-top: 100px
+  .specialist
+    .specialist-description
+      margin-top: 10px
+      .little-title
+        margin-bottom: 15px
+      .descr-title
+        margin-bottom: 10px
+    .btn
+      margin-top: 15px
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+  .top-poster .main-text-wrap
+    padding: 30px 0 80px
+    background: url("../img/header-img.png") no-repeat scroll right top / 34% auto
+  .logo-wrap
+    padding-top: 5px
+  .specialist
+    .btn-wrap
+      text-align: center
+      margin-bottom: 20px
+    .btn
+      margin-top: 0
+      text-align: center
+  .about-ptotez
+    .benefit-item.brain,
+    .benefit-item.jowl,
+    .benefit-item.muscul,
+    .benefit-item.pain
+      padding-left: 20px
+      padding-right: 20px
+      .head
+        float: none
+      .benefit:after
+        display: none
+    .image-wrap
+      padding-top: 150px
+  .our-work .items .item
+    display: block
+    .problem, .treatment
+      width: 100%
+      display: block
+    .problem
+      padding-bottom: 20px
+      padding-right: 20px
+      padding-left: 20px
+      .photo-wrap
+        position: static
+        padding-right: 0
+    .treatment
+      padding: 0 20px 20px
+      .r-line
+        position: static
+        width: 100%
+        height: 45px
+        &:after
+          display: table
+          clear: both
+          content: ''
+        .top
+          border-radius: 0 45px 0 0
+          height: 100%
+          float: left
+          width: 50%
+        .bottom
+          height: 100%
+          float: right
+          width: 50%
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+  .top-poster .main-text-wrap
+    padding: 30px 0 80px
+    background-image: none
+    h1
+      font-size: 36px
+      text-align: center
+  .section-title
+    font-size: 24px
+  .top-nav
+    .menu
+      text-align: right
+      .menu-list
+        width: 150px
+        border: 1px solid $main-color
+        border-radius: 10px
+        display: inline-block
+        text-align: right
+        padding: 5px
+        .menu-item
+          display: list-item
+          margin-bottom: 5px
+          text-align: center
+          border-bottom: 1px dashed $main-color
+          &:hover
+            border-bottom-style: solid
+          a:hover
+            border: none
+  .specialist .specialist-description
+    padding-left: 10px
+    padding-right: 10px
+    .description
+      margin-bottom: 20px
+  .about-ptotez
+    .benefit-item.brain,
+    .benefit-item.jowl,
+    .benefit-item.muscul,
+    .benefit-item.pain
+      padding-left: 20px
+      padding-right: 20px
+      .head
+        float: left
+        margin-right: 25px
+      .benefit:after
+        display: none
+      .ben-descr
+        text-align: justify
+    .image-wrap
+      padding-top: 0
+
+  /*Disable Animation on Mobile Devices*/
+  .animated
+    /*CSS transitions*/
+    -o-transition-property: none !important
+    -moz-transition-property: none !important
+    -ms-transition-property: none !important
+    -webkit-transition-property: none !important
+    transition-property: none !important
+    /*CSS transforms*/
+    -o-transform: none !important
+    -moz-transform: none !important
+    -ms-transform: none !important
+    -webkit-transform: none !important
+    transform: none !important
+    /*CSS animations*/
+    -webkit-animation: none !important
+    -moz-animation: none !important
+    -o-animation: none !important
+    -ms-animation: none !important
+    animation: none !important
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+  .inline-form *
+    border-radius: 3px
+    float: none
+    width: 100%
+    margin-bottom: 5px
+    &:first-child
+      border-radius: 3px
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+  /**/
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+  /**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+  /**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+  /**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+  /**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+  /**/
+

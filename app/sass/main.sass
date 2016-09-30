@@ -14,7 +14,8 @@ body
   line-height: 1
   color: $main-color
   font-family: "Open Sans", sans-serif
-
+a
+  outline: none!important
 .btn
   display: inline-block
   padding: 12px 25px
@@ -36,8 +37,8 @@ body
   color: #737982
   border: 1px solid #53b4ff
 img
-  max-width: 100%
-  max-height: 100%
+  max-width: 100%!important
+  max-height: 100%!important
 .inline-form
   margin-top: 12px
   *
@@ -90,6 +91,39 @@ img
     .slogan
       text-transform: uppercase
       margin-left: 10px
+  .button-menu
+    text-align: right
+    .fa
+      font-size: 36px
+      padding: 10px 20px 0
+      cursor: pointer
+    .btn-menu
+      text-align: right
+      position: relative
+      .menu-list
+        position: absolute
+        z-index: 1
+        right: 0
+        border: 1px solid $main-color
+        padding: 5px
+        border-radius: 5px
+        display: inline-block
+        background-color: #fff
+        text-align: center
+        width: 150px
+        list-style-type: none
+        .menu-item
+          border-bottom: 1px dashed $main-color
+          margin: 5px 0
+          a
+            color: $main-color
+            text-decoration: none
+            &:hover
+              text-decoration: none
+          &:hover
+            border-bottom-style: solid
+            background-color: rgba(105, 113, 106, .1)
+
   .menu
     ul
       display: table
@@ -108,7 +142,7 @@ img
 .top-poster
   background-color: #ced3d7
   color: $dark-color
-  height: 561px
+  //height: 561px
   position: relative
   .main-text-wrap
     padding-top: 190px
@@ -397,6 +431,7 @@ img
     position: relative
     .item
       display: table
+      padding: 0 30px
     h3.item-title
       color: $accent-color
       text-transform: uppercase
@@ -486,9 +521,11 @@ img
             position: absolute
             background: none
           .owl-prev
-            left: -85px
+            left: -20px
           .owl-next
-            right: -85px
+            right: -20px
         .fa
           font-size: 70px
           color: #7d7e7e
+
+@import "madia"

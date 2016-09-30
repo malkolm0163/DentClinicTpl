@@ -1,11 +1,12 @@
 $(document).ready(function () {
-    console.log('asd');
     var owl1 = $(".survey-slider");
     owl1.owlCarousel({
-        items : 5,
-        scrollPerPage: true,
+        items : 3,
         pagination: true,
-        slideSpeed: 800
+        slideSpeed: 800,
+        itemsDesktop : [1199,3],
+        itemsDesktopSmall : [980,3],
+        itemsTablet: [768,1]
     });
     var owl = owl1.data('owlCarousel');
     $('.fa-nav').filter('.next').click(function () {
@@ -21,7 +22,11 @@ $(document).ready(function () {
         items: 1,
         pagination: false,
         navigation: true,
+        singleItem: true,
         slideSpeed: 800,
+        // itemsDesktop : [1199,1],
+        // itemsDesktopSmall : [980,1],
+        // itemsTablet: [768,1],
         addClassActive: true,
         afterMove: function () {
             var i = items.find('.owl-item').filter('.active').children();
@@ -73,4 +78,16 @@ $(document).ready(function () {
     });
 
 
+    /* fill top menu */
+
+    var btnHtml = $('.top-nav').find('.menu').html();
+    var btnMenu = $('.button-menu');
+    btnMenu.find('.btn-menu')
+        .css('display', 'none')
+        .html(btnHtml);
+
+    btnMenu.click(function () {
+        var a = $(this).children('.btn-menu');
+        a.fadeToggle();
+    });
 });
