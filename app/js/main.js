@@ -24,9 +24,6 @@ $(document).ready(function () {
         navigation: true,
         singleItem: true,
         slideSpeed: 800,
-        // itemsDesktop : [1199,1],
-        // itemsDesktopSmall : [980,1],
-        // itemsTablet: [768,1],
         addClassActive: true,
         afterMove: function () {
             var i = items.find('.owl-item').filter('.active').children();

@@ -132,3 +132,13 @@
     font-weight: 300;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Extrabold.eot');
+    src: url('../fonts/OpenSans-Extrabold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/OpenSans-Extrabold.woff') format('woff'),
+    url('../fonts/OpenSans-Extrabold.ttf') format('truetype'),
+    url('../fonts/OpenSans-Extrabold.svg#OpenSans-Extrabold') format('svg');
+    font-weight: 800;
+    font-style: normal;
+}
