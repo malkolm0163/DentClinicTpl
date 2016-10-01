@@ -97,4 +97,6 @@ $(document).ready(function () {
         type:'image',
         closeBtnInside: true
     });
+
+    $('.benefit-item').equalHeights();
 });
