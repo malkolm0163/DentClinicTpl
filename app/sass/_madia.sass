@@ -73,6 +73,11 @@
           height: 100%
           float: right
           width: 50%
+  .faq
+    .faq-button-wrapper
+      margin-top: 25px
+    .faq-block
+      margin-top: 25px
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
   .top-poster .main-text-wrap
@@ -116,18 +121,20 @@
       padding-left: 20px
       padding-right: 20px
       .head
-        float: left
-        margin-right: 25px
+        float: right
+        margin-left: 25px
       .benefit
-        margin-left: 125px
+        //margin-right: 125px
         text-align: left
         &:after
           display: none
       .ben-descr
         text-align: justify
-        margin-left: 125px
+        //margin-right: 125px
     .image-wrap
       padding-top: 0
+  .faq .faq-button-wrapper
+    text-align: center
 
   /*Disable Animation on Mobile Devices*/
   .animated
@@ -153,6 +160,20 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
+  .top-poster .main-text-wrap h1
+    font-size: 24px
+  .about-ptotez .benefit-item.brain,
+  .about-ptotez .benefit-item.jowl,
+  .about-ptotez .benefit-item.muscul,
+  .about-ptotez .benefit-item.pain
+    .head
+      height: 70px
+    h3.benefit
+      margin-left: 0
+    .ben-descr
+      margin-left: 0
+
+
   .inline-form *
     border-radius: 3px
     float: none

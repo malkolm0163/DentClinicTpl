@@ -126,4 +126,21 @@ $(document).ready(function () {
         par.find('.active').removeClass('active');
         th.addClass('active');
     });
+
+    var slider = $('.reviews').find('.slider');
+
+    slider.owlCarousel({
+        singleItem: true,
+        addClassActive: true,
+        pagination: false,
+        slideSpeed: 800,
+        autoHeight: true,
+        navigation: true,
+        navigationText: [
+            '<i class="fa fa-angle-left" aria-hidden="true"></i>',
+            '<i class="fa fa-angle-right" aria-hidden="true"></i>'
+        ]
+    });
+    var sliderOwl = slider.data('owlCarousel');
+    sliderOwl.goTo(1);
 });
