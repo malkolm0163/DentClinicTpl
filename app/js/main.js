@@ -93,10 +93,37 @@ $(document).ready(function () {
         var a = $(this).children('.btn-menu');
         a.fadeToggle();
     });
-    $('.license').find('.plus').magnificPopup({
-        type:'image',
-        closeBtnInside: true
+    // $('.license').find('.plus').magnificPopup({
+    //     type:'image',
+    //     closeBtnInside: true
+    // });
+
+    $(document).ready(function() {
+        $('.image-link').magnificPopup({
+            type:'image'});
     });
 
     $('.benefit-item').equalHeights();
+
+    var faq = $("#faq-carousel");
+    faq.owlCarousel({
+
+        navigation : false, // Show next and prev buttons
+        slideSpeed : 300,
+        items: 1,
+        pagination: false,
+        paginationNumbers: false,
+        singleItem:true,
+        mouseDrag: false,
+        touchDrag: false
+
+    });
+    var faqOwl = faq.data('owlCarousel');
+    $('.faquest').on('click', function () {
+        var th = $(this);
+        faqOwl.goTo(th.index(), 300);
+        var par = th.parent();
+        par.find('.active').removeClass('active');
+        th.addClass('active');
+    });
 });
