@@ -28,17 +28,17 @@ gulp.task('styles', function () {
         .pipe(browserSync.stream());
 });
 
-// gulp.task('scripts', function() {
-//     return gulp.src([
-//         // './app/libs/modernizr/modernizr.js',
-//         './app/libs/jquery/jquery-1.11.2.min.js'
-//         // './app/libs/waypoints/waypoints.min.js',
-//         // './app/libs/animate/animate-css.js'
-//     ])
-//         .pipe(concat('libs.js'))
-//         // .pipe(uglify()) //Minify libs.js
-//         .pipe(gulp.dest('./app/js/'));
-// });
+gulp.task('scripts', function() {
+    return gulp.src([
+        './app/libs/jquery/dist/jquery.2.2.4.min.js',
+        './app/libs/owl-carousel/owl-carousel/owl.carousel.min.js',
+        './app/libs/magnific-popup/dist/jquery.magnific-popup.min.js',
+        './app/libs/jquery-equalheights/jquery.equalheights.min.js'
+    ])
+        .pipe(concat('libs.js'))
+        .pipe(uglify()) //Minify libs.js
+        .pipe(gulp.dest('./app/js/'));
+});
 
 gulp.task('watch', function () {
     gulp.watch('app/sass/*.sass', ['styles']);
