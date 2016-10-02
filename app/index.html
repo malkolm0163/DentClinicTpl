@@ -60,7 +60,7 @@
                         <p class="phone">
                             <i class="fa fa-phone" aria-hidden="true"></i>
                             +7 (495) 103 4786</p>
-                        <a href="#" class="btn btn-blue">Заказать звонок</a>
+                        <a href="#popup-form" class="btn btn-blue">Заказать звонок</a>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6 col-sm-pull-6 col-md-pull-0 col-xs-8">
@@ -81,25 +81,25 @@
                     <div class="menu hidden-xs">
                         <ul class="menu-list">
                             <li class="menu-item">
-                                <a href="#">О специалисте</a>
+                                <a href="#specialist" class="go_to">О специалисте</a>
                             </li>
                             <li class="menu-item">
-                                <a href="#">Услуги</a>
+                                <a href="#about" class="go_to">Услуги</a>
                             </li>
                             <li class="menu-item">
-                                <a href="#">Кейсы</a>
+                                <a href="#case" class="go_to">Кейсы</a>
                             </li>
                             <li class="menu-item">
-                                <a href="#">Почему мы</a>
+                                <a href="#why" class="go_to">Почему мы</a>
                             </li>
                             <li class="menu-item">
-                                <a href="#">О нас</a>
+                                <a href="#numbers" class="go_to">О нас</a>
                             </li>
                             <li class="menu-item">
-                                <a href="#">Отзывы</a>
+                                <a href="#reviews" class="go_to">Отзывы</a>
                             </li>
                             <li class="menu-item">
-                                <a href="#">Контакты</a>
+                                <a href="#contact" class="go_to">Контакты</a>
                             </li>
                         </ul>
                     </div>
@@ -141,7 +141,7 @@
         </div>
     </div>
 </header>
-<section class="specialist">
+<section id="specialist" class="specialist">
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
@@ -175,13 +175,13 @@
                     </ul>
                 </div>
                 <div class="btn-wrap">
-                    <a href="#" class="btn btn-blue">Заказать звонок</a>
+                    <a href="#popup-form" class="btn btn-blue">Заказать звонок</a>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<section class="about-ptotez">
+<section id="about" class="about-ptotez">
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
@@ -243,13 +243,13 @@
                     <p class="after-text">
                         После протезирования вы снова почувствуете  уверенность в себе, будете лучше себя чувствовать и станете больше улыбаться!
                     </p>
-                    <a href="#" class="btn btn-transparent">Записаться к врачу</a>
+                    <a href="#popup-form" class="btn btn-transparent">Записаться к врачу</a>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<section class="survey">
+<section id="case" class="survey">
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
@@ -618,7 +618,7 @@
         </div>
     </div>
 </section>
-<section class="why-we-are">
+<section id="why" class="why-we-are">
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
@@ -728,7 +728,7 @@
         </div>
     </div>
 </section>
-<section class="numbers">
+<section id="numbers" class="numbers">
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
@@ -770,7 +770,7 @@
         <div class="row">
             <div class="col-xs-12">
                 <div class="btn-wrap">
-                    <a href="#" class="btn btn-green">оставить заявку</a>
+                    <a href="#popup-form" class="btn btn-green">оставить заявку</a>
                 </div>
             </div>
         </div>
@@ -952,13 +952,13 @@
                     </div>
                 </div>
                 <div class="faq-button-wrapper">
-                    <a href="#" class="btn btn-blue question">ЗАДАТЬ СВОИ ВОПРОС</a>
+                    <a href="#popup-form" class="btn btn-blue question">ЗАДАТЬ СВОИ ВОПРОС</a>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<section class="reviews">
+<section id="reviews" class="reviews">
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
@@ -1063,7 +1063,7 @@
         </div>
     </div>
 </section>
-<section class="map">
+<section id="contact" class="map">
     <!-- MAP Start -->
     <div class="container-fluid">
         <div class="row">
@@ -1113,7 +1113,7 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-3">
-                <a href="" class="btn btn-grey">Остались вопросы?</a>
+                <a href="#popup-form" class="btn btn-grey">Остались вопросы?</a>
             </div>
             <div class="col-sm-3 col-md-offset-1">
                 <a href="#" class="soglash">Пользовательское соглашение</a>
@@ -1127,7 +1127,25 @@
         </div>
     </div>
 </footer>
-<div class="hidden"></div>
+<div class="hidden">
+    <div id="popup-form">
+        <div class="form-wrap">
+            <div class="form">
+                <h3 class="form-title">Приходите на первую <span>бесплатную</span> консультацию</h3>
+                <p class="subtitle">Заполните форму, и наш специалист свяжется с вами в ближайшее время, чтобы записать на удобное время</p>
+                <form action="#" method="post">
+                    <label>
+                        <input type="text" name="name" placeholder="Имя">
+                    </label>
+                    <label>
+                        <input type="text" name="phone" placeholder="Телефон">
+                    </label>
+                    <input type="submit" class="btn btn-blue">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!--[if lt IE 9]>
 <script src="libs/html5shiv/dist/html5shiv.min.js"></script>
