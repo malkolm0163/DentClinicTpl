@@ -1,6 +1,8 @@
 
 @import "vars"
-//@import "header"
+@import "header"
+span.uppercase
+  text-transform: uppercase
 /* SECTION ABOUT PROTEZ*/
 .about-ptotez
   padding-top: 50px
@@ -92,6 +94,7 @@
     .ben-descr
       margin-bottom: 25px
       line-height: 1.5
+      color: #868d98
   .after
     text-align: center
     .after-text
@@ -99,6 +102,8 @@
       line-height: 1.4
       margin-top: 30px
       margin-bottom: 25px
+    .btn
+      color: #868d98
 
 
 /* SURVEY */
@@ -124,11 +129,14 @@
   .section-title
     color: #fff
     margin-bottom: 20px
-    font-weight: 600
+    font-weight: 300
+    font-size: 31px
   .subtitle
     text-align: center
     padding: 0 8%
     margin-bottom: 75px
+    color: #50545a
+    font-weight: 600
   .survey-slider
     margin-bottom: 50px
     .slide
@@ -166,6 +174,10 @@
     >.btn
       width: 49.5%
       float: left
+      font-size: 12px
+      font-weight: normal
+      color: #fff
+      background-color: #39bca4
       &:first-child
         margin-right: 1px
       i.fa
@@ -175,10 +187,10 @@
   .owl-page
     span
       background-color: transparent
-      border: 1px solid $main-color
+      border: 1px solid #3a8986
     &.active
       span
-        background-color: $main-color
+        background-color: #3a8986
 
 /* OUR WORK */
 .our-work
@@ -338,6 +350,7 @@
         color: #04b3ab
         font-weight: normal
         text-align: center
+        text-transform: uppercase
         span
           text-transform: uppercase
           font-weight: 800
@@ -346,6 +359,7 @@
         line-height: 1.4
         text-align: center
         margin-top: 20px
+        font-weight: normal
         font-size: 15px
         margin-bottom: 55px
   form
@@ -361,12 +375,16 @@
       border: none
       border-radius: 0
       margin-bottom: 1px
+      font-family: Ubuntu, sans-serif
+      font-weight: 300
+      font-size: 16px
     .btn
       width: 100%
       border-radius: 0 0 3px 3px
       font-size: 13px
       padding-bottom: 17px
       padding-top: 17px
+      text-transform: uppercase
 /* WHY WE ARE */
 .why-we-are
   padding-top: 70px
@@ -421,6 +439,8 @@
       margin: 0 auto
   .btn-wrap
     text-align: center
+    .btn
+      background-color: #54cbb1
 /*SECTION LICENSE*/
 .mfp-close
   cursor: pointer !important
@@ -476,7 +496,7 @@
   right: -15px
   top: 10px
 .document
-  font-family: Ubuntu
+  font-family: Ubuntu, sans-serif
   font-weight: 500
   text-transform: uppercase
   color: #0c4c4a
@@ -497,8 +517,8 @@
   .rub-pict
     position: absolute
     z-index: 10
-    width: 50px
-    height: 42px
+    width: 33px
+    height: 48px
     top: 50px
     left: 30px
   .quest-desc
@@ -568,6 +588,8 @@
       position: absolute
       width: 197px
       height: 40px
+    .btn-blue, .btn-blue:active, .btn-blue:hover
+      background-color: #5da9f0
   #faq-carousel
     width: 100%
   .item
@@ -763,8 +785,9 @@
     padding-top: 45px
   .contact-icon
     margin-right: 10px
+    font-size: 18px
   .contact-desc
-    padding-top: 15px
+    padding-top: 10px
     padding-left: 25px
     font-family: 'Open Sans', sans-serif
     font-weight: 300
@@ -777,28 +800,28 @@
   padding-top: 40px
   padding-bottom: 40px
   .btn-grey
-    border: 2px solid #73767a
+    border: 1px solid #73767a
     color: #acb1b7
     margin-top: 9px
     text-align: center
   .soglash
     display: inline-block
     text-transform: uppercase
-    color: #acb1b7
-    font-family: "Ubuntu"
+    color: #8d9296
+    font-family: "Ubuntu", sans-serif
+    text-decoration: underline
     font-weight: 500
     font-style: normal
     font-size: 10px
     padding-top: 25px
     text-align: center
   .moks
-    display: inline-block
     text-transform: uppercase
-    color: #acb1b7
+    color: #8d9296
     display: table
     width: 100%
   .desc-mokselle
-    font-family: "Ubuntu"
+    font-family: "Ubuntu", sans-serif
     font-weight: 500
     font-style: normal
     font-size: 10px

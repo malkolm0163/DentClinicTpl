@@ -104,6 +104,8 @@ $(document).ready(function () {
     });
 
     $('.benefit-item').equalHeights();
+    $('.why-item').equalHeights();
+
 
     var faq = $("#faq-carousel");
     faq.owlCarousel({

@@ -81,6 +81,7 @@ form
       display: inline-block
       font-weight: bold
       margin-right: 25px
+      color: #545555
       .fa
         margin-right: 10px
         font-size: 22px
@@ -92,6 +93,9 @@ form
     .slogan
       text-transform: uppercase
       margin-left: 10px
+      font-family: Ubuntu, sans-serif
+      font-size: 15.33px
+      color: #495258
   .button-menu
     text-align: right
     .fa
@@ -135,7 +139,9 @@ form
         display: table-cell
         a
           text-decoration: none
-          color: $main-color
+          font-family: Ubuntu
+          font-size: 16px
+          color: #778087
           &:hover
             border-bottom: 1px dashed $main-color
             text-decoration: none
@@ -145,16 +151,27 @@ form
   color: $dark-color
   //height: 561px
   position: relative
+  .image
+    img
+      min-width: 500px!important
   .main-text-wrap
     padding-top: 190px
+    font-family: Ubuntu, sans-serif
     h1
       font-family: "Open Sans" ,sans-serif
       font-size: 48px
+      color: #45494e
+      font-weight: 600
       padding-bottom: 15px
     .subtitle
       font-weight: 300
+      color: #5b5d61
+      font-size: 19px
+      margin-bottom: 8px
     .title
       font-weight: 500
+      font-size: 19px
+      color: #5b5d61
     .form-wrap
       margin-top: 30px
       input[type=text]
@@ -169,6 +186,11 @@ form
         font-weight: bold
         font-size: 12.73px
         line-height: 15px
+      .little-title
+        font-family: Ubuntu, sans-serif
+        font-size: 14px
+        color: #6c7179
+        font-weight: 500
   .bottom-thing
     position: absolute
     bottom: 0
@@ -181,12 +203,17 @@ form
     .text
       margin-bottom: 10px
       font-weight: 500
+      font-family: Ubuntu, sans-serif
+      font-size: 14px
+      color: #6c7179
     .fa
       font-size: 18px
 
 /* SECTION SPECIALIST */
 .specialist
   padding-top: 50px
+  .section-title
+    color: #04b3ab
   .specialist-description
     margin-top: 35px
     h3
@@ -199,10 +226,13 @@ form
       color: #868d98
       font-size: 15px
       font-weight: 600
+      font-family: "Open Sans", sans-serif
     .descr-title
       font-family: "Open Sans", sans-serif
       font-size: 14px
-      color: $accent-color
+      width: 100%
+      color: #04b3ab
+      display: inline-block
       text-transform: uppercase
       font-weight: bold
       margin-bottom: 20px
@@ -210,10 +240,12 @@ form
       margin-bottom: 40px
       list-style-type: none
       li
-        margin-bottom: 5px
+        margin-bottom: 8px
         position: relative
         font: 14px/1 "Open Sans", sans-serif
         color: #868d98
+        display: inline-block
+        width: 100%
         &:before
           position: absolute
           top: 0
@@ -225,8 +257,9 @@ form
     padding-left: 56px
     padding-right: 34px
     position: relative
-    margin-top: 60px
+    margin-top: 30px
     color: #fff
+    background-color: #66a9f0
     text-decoration: none
     &:after
       left: 31px
