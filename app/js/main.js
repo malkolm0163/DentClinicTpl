@@ -154,4 +154,23 @@ $(document).ready(function () {
         }
         return false; // выключаем стандартное действие
     });
+    $('form').submit(function () {
+        var th = $(this);
+        var name = th.find('input[name=name]');
+        var phone = th.find('input[name=phone]');
+        if(name.val() === ''){
+            name.addClass('not-valid')
+        }
+        if(phone.val() === ''){
+            phone.addClass('not-valid')
+        }
+        return false;
+    });
+    $('input').on('keyup', function () {
+        var th = $(this);
+        window.naaa = th;
+        if (th.val() !== ''){
+            th.removeClass('not-valid');
+        }
+    })
 });
