@@ -1,6 +1,8 @@
 
 @import "vars"
-//@import "header"
+//@import "icons"
+@import "header"
+
 span.uppercase
   text-transform: uppercase
 /* SECTION ABOUT PROTEZ*/
@@ -339,6 +341,7 @@ span.uppercase
 /* CONSULTATION */
 .consultation
   background: #4ea2de url("../img/consultation-bg.jpg") center 0 repeat-x
+  background-size: cover
   .form-wrap
     padding: 45px 0
     .form
@@ -536,6 +539,8 @@ span.uppercase
     display: none
     &.tactive
       display: block
+    img
+      width: 100%
   .table-faq tr, .table-faq td
     position: relative
   .td-faq-rub
@@ -589,7 +594,7 @@ span.uppercase
       width: 197px
       height: 40px
     .btn-blue, .btn-blue:active, .btn-blue:hover
-      background-color: #5da9f0
+      background-color: #53b4ff
   #faq-carousel
     width: 100%
   .item

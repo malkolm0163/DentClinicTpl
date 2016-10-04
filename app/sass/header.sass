@@ -82,9 +82,12 @@ form
       font-weight: bold
       margin-right: 25px
       color: #545555
-      .fa
+      .if
         margin-right: 10px
+        vertical-align: middle
         font-size: 22px
+    .btn
+      font-size: 10px
   .logo-wrap
     >div
       display: inline-block
@@ -184,8 +187,11 @@ form
         padding: 16px 15px
         font-family: Ubuntu, sans-serif
         font-weight: bold
+        background-color: #04b3ab
         font-size: 12.73px
         line-height: 15px
+        &:hover, &:active
+          background-color: #04b3ab
       .little-title
         font-family: Ubuntu, sans-serif
         font-size: 14px
@@ -206,7 +212,7 @@ form
       font-family: Ubuntu, sans-serif
       font-size: 14px
       color: #6c7179
-    .fa
+    .if
       font-size: 18px
 
 /* SECTION SPECIALIST */
@@ -220,6 +226,7 @@ form
       font-family: "Open Sans", sans-serif
       font-size: 28px
       font-weight: bold
+      color: #5a5f66
       margin-bottom: 5px
     .little-title
       margin-bottom: 40px
@@ -253,21 +260,38 @@ form
           color: #868d98
           left: -8px
           content: '•'
-  .btn
-    padding-left: 56px
-    padding-right: 34px
+  .a-wrap
+    display: inline-block
     position: relative
     margin-top: 30px
-    color: #fff
-    background-color: #66a9f0
-    text-decoration: none
-    &:after
-      left: 31px
-      line-height: 1
-      top: 50%
-      margin-top: -7px
-      content: '\f095'
-      font-family: FontAwesome
-      font-size: 14px
-      color: #fff
+    .if
       position: absolute
+      left: 24px
+      top: 50%
+      margin-top: -10px
+      z-index: 10
+      color: #fff
+      font-size: 20px
+  .btn
+    padding-left: 54px
+    padding-right: 34px
+    position: relative
+    color: #fff
+    background-color: #5cb4ff
+    text-decoration: none
+    &:hover, &:active
+      background-color: #5cb4ff
+    //&:after
+    //  left: 31px
+    //  top: 50%
+    //  margin-top: -7px
+    //  content: "a"
+    //  font-family: iconFont
+    //  display: inline-block
+    //  font-style: normal
+    //  text-rendering: auto
+    //  line-height: 1
+    //  font-weight: normal
+    //  -webkit-font-smoothing: antialiased
+    //  color: inherit
+    //  position: absolute
