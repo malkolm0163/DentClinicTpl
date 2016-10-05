@@ -104,7 +104,9 @@ $(document).ready(function () {
     });
 
     $('.benefit-item').equalHeights();
-    $('.why-item').equalHeights();
+    // $('.why-item').equalHeights();
+    $('.why-title').equalHeights();
+    $('.why-paragraph').equalHeights();
 
 
     var faq = $("#faq-carousel");
